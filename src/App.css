@@ -1,0 +1,40 @@
+body{
+  margin: 0;
+}
+
+.pane{
+  height: 50vh;
+  display: flex
+}
+
+.editor-container{
+  flex-grow: 1; /* will divided all the editor box with some space*/
+  flex-basis: 0; /* will divided all the editor box with same space*/
+  display: flex;
+  flex-direction: column;
+  padding:.5rem;
+  background-color: hsl(225, 6%,25%);
+}
+ 
+.editor-title{
+  display: flex;
+  justify-content: space-between;
+  color:white;
+  padding: .5rem;
+  border: 1px solid rgb(118, 118, 118);
+  border-top-right-radius: .5rem;
+  border-top-left-radius: .5rem;
+} 
+iframe{
+  margin-top: 20px;
+}
+.editor-container.collapsed{
+  flex-grow: 0;
+}
+.expand-collaspe-btn{
+  margin-left: .5rem;
+  border:none;
+  background: none;
+  cursor: pointer;
+  color: white;
+}
